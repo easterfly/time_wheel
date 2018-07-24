@@ -1,0 +1,15 @@
+target/
+.settings/
+
+logs/*
+*.log
+
+.project
+.classpath
+
+shaxi3.*.min.js
+js_c.*.min.js
+shaxi.*.min.css
+
+.idea/
+*.iml
