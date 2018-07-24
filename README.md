@@ -11,6 +11,7 @@ maven依赖
     <version>1.0-SNAPSHOT</version>
 </dependency>
 
+
 2. 添加redis配置信息和任务列表
 示例
 
@@ -27,6 +28,8 @@ task1.cronExpression=*/5 * * * * ?
 task2.className=com.eastefly.xml.controller.TimeWheel
 task2.method=say
 task2.cronExpression=*/5 * * * * ?
+
+
 3. 任务执行入口
 示例
 
@@ -43,6 +46,8 @@ public class TimeWheel {
         System.out.println("eat 200 bread");
     }
 }
+
+
 4. Spring注入redis配置和任务列表：
 示例
 
@@ -66,6 +71,8 @@ public class TimeWheel {
         </list>
     </property>
 </bean>
+
+
 5. 引入时间轮并启动、加载数据：
 示例
 
